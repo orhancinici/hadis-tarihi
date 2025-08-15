@@ -1,0 +1,31 @@
+{
+  "name": "hadis-tarihi-projesi",
+  "version": "1.0.0",
+  "description": "TÜBİTAK Destekli Hadis Tarihi Dijital Araştırma Projesi",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "live-server --port=3000",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "hadis",
+    "tarih",
+    "dijital",
+    "arastirma",
+    "tubitak",
+    "islam",
+    "bilim"
+  ],
+  "author": "Hadis Tarihi Araştırma Ekibi",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
