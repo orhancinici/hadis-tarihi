@@ -17,16 +17,16 @@ class ArticlesManager {
             {
                 filename: 'hadis-tarihi-dijital-metodoloji.md',
                 title: 'Hadis Tarihi Araştırmalarında Dijital Metodolojinin Kullanımı',
-                author: 'Hadis Tarihi Araştırma Ekibi',
-                date: '2024-01-15',
+                author: 'Proje Yürütücüsü',
+                date: '2025-05-15',
                 tags: ['dijital metodoloji', 'hadis tarihi', 'CBS', 'sosyal ağ analizi'],
                 excerpt: 'Bu yazıda, hadis tarihi araştırmalarında dijital teknolojilerin kullanımı ve bu alanda yeni açılımlar ele alınmaktadır.'
             },
             {
                 filename: 'III-IX-asir-hadis-ilmi.md',
                 title: 'III./IX. Asır Sonrası Hadis İlminin Gelişimi',
-                author: 'Hadis Tarihi Araştırma Ekibi',
-                date: '2024-01-20',
+                author: 'Proje Yürütücüsü',
+                date: '2025-06-15',
                 tags: ['III. asır', 'IX. asır', 'hadis ilmi', 'muhaddisler', 'tarihsel analiz'],
                 excerpt: 'III./IX. asır sonrasında hadis ilminin gelişimi ve muhaddislerin faaliyetlerinin dijital analizi.'
             }
