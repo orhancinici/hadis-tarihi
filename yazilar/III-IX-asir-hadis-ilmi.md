@@ -1,12 +1,13 @@
 ---
 title: "III./IX. Asır Sonrası Hadis İlminin Gelişimi"
-author: "Hadis Tarihi Araştırma Ekibi"
-date: "2024-01-20"
+author: "Proje Yürütücüsü"
+date: "2025-07-20"
 tags: ["III. asır", "IX. asır", "hadis ilmi", "muhaddisler", "tarihsel analiz"]
 excerpt: "III./IX. asır sonrasında hadis ilminin gelişimi ve muhaddislerin faaliyetlerinin dijital analizi."
 ---
 
 # III./IX. Asır Sonrası Hadis İlminin Gelişimi
+*UYARI: BU METİN DENEME AMAÇLI YAZILMIŞTIR. LÜTFEN DİKKATE ALMAYINIZ
 
 ## Tarihsel Arka Plan
 
