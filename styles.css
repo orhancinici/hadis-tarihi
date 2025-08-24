@@ -116,9 +116,9 @@ p {
     color: var(--primary-color);
 }
 
-.nav-logo i {
-    margin-right: 10px;
-    font-size: 2rem;
+.nav-logo img {
+    height: 65px; /* İstediğiniz yüksekliği ayarlayın */
+    width: auto;  /* Genişlik otomatik olarak orantılansın */
 }
 
 .nav-menu {
@@ -922,7 +922,7 @@ html {
 }
 
 .article-footer {
-    text-align: right;
+    text-align: left;
 }
 
 /* Article Detail Styles */
