@@ -30,7 +30,8 @@ class ArticleDetailManager {
             // Tüm yazıları yükle
             const articleFiles = [
                 'hadis-tarihi-dijital-metodoloji.md',
-                'III-IX-asir-hadis-ilmi.md'
+                'III-IX-asir-hadis-ilmi.md',
+                'deneme.md'
             ];
 
             const articlesPromises = articleFiles.map(async (filename) => {
