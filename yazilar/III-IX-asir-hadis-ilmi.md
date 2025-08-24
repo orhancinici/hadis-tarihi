@@ -7,7 +7,7 @@ excerpt: "III./IX. asır sonrasında hadis ilminin gelişimi ve muhaddislerin fa
 ---
 
 # III./IX. Asır Sonrası Hadis İlminin Gelişimi
-*UYARI: BU METİN DENEME AMAÇLI YAZILMIŞTIR. LÜTFEN DİKKATE ALMAYINIZ
+*UYARI: BU METİN DENEME AMAÇLI YAZILMIŞTIR. LÜTFEN DİKKATE ALMAYINIZ*
 
 ## Tarihsel Arka Plan
 
