@@ -4,7 +4,7 @@
   "description": "TÜBİTAK Destekli Hadis Tarihi Dijital Araştırma Projesi",
   "main": "index.html",
   "scripts": {
-    "start": "live-server --port=$PORT --host=0.0.0.0",
+    "start": "npx http-server -p $PORT -a 0.0.0.0",
     "dev": "live-server --port=3000",
     "build": "echo 'Static site - no build required'"
   },
@@ -23,6 +23,6 @@
     "node": "18.x"
   },
   "dependencies": {
-    "live-server": "^1.2.2"
+    "http-server": "^14.1.1"
   }
 }
