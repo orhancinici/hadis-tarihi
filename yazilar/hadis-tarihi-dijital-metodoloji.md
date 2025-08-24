@@ -3,13 +3,13 @@ title: "Hadis Tarihi Araştırmalarında Dijital Metodolojinin Kullanımı"
 author: "Proje Yürütücüsü"
 date: "2025-06-15"
 tags: ["dijital metodoloji", "hadis tarihi", "CBS", "sosyal ağ analizi"]
-excerpt: "Bu yazıda, hadis tarihi araştırmalarında dijital teknolojilerin kullanımı ve bu alanda yeni açılımlar ele alınmaktadır."
+excerpt: "Bu yazıda, hadis tarihi araştırmalarında dijital teknolojilerin kullanımı ve bu alanda yeni açılımlar ele alınmaktadır..."
 ---
 
 # Hadis Tarihi Araştırmalarında Dijital Metodolojinin Kullanımı
-*UYARI: BU METİN DENEME AMAÇLI YAZILMIŞTIR. LÜTFEN DİKKATE ALMAYINIZ
+*UYARI: BU METİN DENEME AMAÇLI YAZILMIŞTIR. LÜTFEN DİKKATE ALMAYINIZ*
 
-
+ddd
 ## Giriş
 
 Hadis tarihi, İslam'ın ilk asırlarından itibaren hadis ilminin gelişimini ve muhaddislerin faaliyetlerini inceleyen önemli bir disiplindir. Geleneksel araştırma yöntemleri, bu alanda önemli katkılar sağlamış olsa da, dijital teknolojilerin sunduğu imkanlar, hadis tarihi araştırmalarında yeni perspektifler açmaktadır.
