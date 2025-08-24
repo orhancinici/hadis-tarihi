@@ -30,8 +30,7 @@ class ArticleDetailManager {
             // Tüm yazıları yükle
             const articleFiles = [
                 'hadis-tarihi-dijital-metodoloji.md',
-                'III-IX-asir-hadis-ilmi.md',
-                'deneme.md'
+                'III-IX-asir-hadis-ilmi.md'
             ];
 
             const articlesPromises = articleFiles.map(async (filename) => {
@@ -78,25 +77,50 @@ class ArticleDetailManager {
         const currentIndex = this.allArticles.findIndex(article => article.slug === this.currentSlug);
         console.log('Mevcut yazı indeksi:', currentIndex);
         
+        // Önceki yazı butonu
         if (currentIndex > 0) {
             const prevArticle = this.allArticles[currentIndex - 1];
             this.prevArticleBtn.href = `yazi-detay.html?slug=${prevArticle.slug}`;
             this.prevArticleBtn.style.display = 'inline-flex';
+            this.prevArticleBtn.style.visibility = 'visible';
+            this.prevArticleBtn.style.pointerEvents = 'auto';
             console.log('Önceki yazı:', prevArticle.slug);
         } else {
             this.prevArticleBtn.style.display = 'none';
+            this.prevArticleBtn.style.visibility = 'hidden';
+            this.prevArticleBtn.style.pointerEvents = 'none';
             console.log('Önceki yazı yok');
         }
         
+        // Sonraki yazı butonu
         if (currentIndex < this.allArticles.length - 1 && currentIndex >= 0) {
             const nextArticle = this.allArticles[currentIndex + 1];
             this.nextArticleBtn.href = `yazi-detay.html?slug=${nextArticle.slug}`;
             this.nextArticleBtn.style.display = 'inline-flex';
+            this.nextArticleBtn.style.visibility = 'visible';
+            this.nextArticleBtn.style.pointerEvents = 'auto';
             console.log('Sonraki yazı:', nextArticle.slug);
         } else {
             this.nextArticleBtn.style.display = 'none';
+            this.nextArticleBtn.style.visibility = 'hidden';
+            this.nextArticleBtn.style.pointerEvents = 'none';
             console.log('Sonraki yazı yok');
         }
+        
+        // Event listener'ları temizle ve yeniden ekle
+        this.prevArticleBtn.onclick = null;
+        this.nextArticleBtn.onclick = null;
+        
+        // Yeni event listener'lar ekle
+        this.prevArticleBtn.addEventListener('click', (e) => {
+            console.log('Önceki yazıya tıklandı');
+            // Normal link davranışına izin ver
+        });
+        
+        this.nextArticleBtn.addEventListener('click', (e) => {
+            console.log('Sonraki yazıya tıklandı');
+            // Normal link davranışına izin ver
+        });
     }
 
     async loadArticle(slug) {

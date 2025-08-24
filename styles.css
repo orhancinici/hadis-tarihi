@@ -1098,6 +1098,7 @@ html {
 
 .article-navigation .btn[style*="display: none"] {
     display: none !important;
+    pointer-events: none !important;
 }
 
 .error-message {
