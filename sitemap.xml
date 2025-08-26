@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://hadistarihi.dev/</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://hadistarihi.dev/img/Logo_web_kck.png</image:loc>
+            <image:title>Hadis Tarihi Dijital Araştırma Projesi Logo</image:title>
+            <image:caption>TÜBİTAK destekli hadis tarihi araştırma projesi logosu</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://hadistarihi.dev/img/tubitak_logo.png</image:loc>
+            <image:title>TÜBİTAK Logo</image:title>
+            <image:caption>Türkiye Bilimsel ve Teknolojik Araştırma Kurumu logosu</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Yazılar Sayfası -->
+    <url>
+        <loc>https://hadistarihi.dev/yazilar.html</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Yazı Detay Sayfası -->
+    <url>
+        <loc>https://hadistarihi.dev/yazi-detay.html</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Proje Hakkında Bölümü -->
+    <url>
+        <loc>https://hadistarihi.dev/#about</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Metodoloji Bölümü -->
+    <url>
+        <loc>https://hadistarihi.dev/#methodology</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Ekip Bölümü -->
+    <url>
+        <loc>https://hadistarihi.dev/#team</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- İletişim Bölümü -->
+    <url>
+        <loc>https://hadistarihi.dev/#contact</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Veritabanı Bölümü -->
+    <url>
+        <loc>https://hadistarihi.dev/#veritabani</loc>
+        <lastmod>2025-01-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+</urlset>

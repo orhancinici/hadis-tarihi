@@ -117,8 +117,13 @@ p {
 }
 
 .nav-logo img {
-    height: 65px; /* İstediğiniz yüksekliği ayarlayın */
+    height: 45px; /* İstediğiniz yüksekliği ayarlayın */
     width: auto;  /* Genişlik otomatik olarak orantılansın */
+}
+
+.nav-logo i {
+    margin-right: 10px;
+    font-size: 2rem;
 }
 
 .nav-menu {
@@ -158,6 +163,13 @@ p {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger:hover {
+    background-color: rgba(44, 85, 48, 0.1);
 }
 
 .hamburger span {
@@ -165,7 +177,21 @@ p {
     height: 3px;
     background: var(--primary-color);
     margin: 3px 0;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 
 /* Hero Section */
@@ -614,7 +640,7 @@ p {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -630,10 +656,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* Görünümü iyileştirmek için biraz boşluk ekleyelim */
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Başlıklar ve paragraflar için de metin ortalamasını ekleyerek
@@ -706,10 +732,18 @@ p {
         display: flex;
     }
 
+    .nav-logo img {
+        height: 35px; /* Mobilde logo boyutunu küçült */
+    }
+
+    .navbar {
+        padding: 0.8rem 0; /* Navbar padding'ini azalt */
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px; /* Navbar yüksekliği azaldığı için menü pozisyonunu ayarla */
         flex-direction: column;
         background-color: white;
         width: 100%;
@@ -723,18 +757,67 @@ p {
         left: 0;
     }
 
+    .nav-menu a {
+        padding: 1rem 0; /* Touch-friendly padding */
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        padding-top: 60px; /* Navbar yüksekliği için padding ayarla */
+        min-height: calc(100vh - 60px);
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        padding: 2rem 20px; /* Hero container padding'ini artır */
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Hero title boyutunu daha da küçült */
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero-buttons {
         justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero-visual {
+        margin-top: 1rem;
+    }
+
+    .geometric-pattern {
+        width: 200px; /* Mobilde geometric pattern boyutunu küçült */
+        height: 200px;
+    }
+
+    .pattern-element:nth-child(1) {
+        width: 140px;
+        height: 140px;
+        top: 30px;
+        left: 30px;
+    }
+
+    .pattern-element:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+    }
+
+    .pattern-element:nth-child(3) {
+        width: 60px;
+        height: 60px;
+        top: 70px;
+        left: 70px;
     }
 
     .about-content,
@@ -775,27 +858,288 @@ p {
     h3 { font-size: 1.5rem; }
 }
 
+/* Extra small screens - 480px and below */
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Ensure all sections don't overflow */
+    .about,
+    .methodology,
+    .features,
+    .team,
+    .contact,
+    .footer {
+        overflow-x: hidden;
+    }
+
+    /* Fix any potential grid overflow */
+    .methodology-grid,
+    .team-grid,
+    .articles-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .method-card,
+    .team-card,
+    .article-card {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .nav-logo img {
+        height: 30px; /* Çok küçük ekranlarda logo daha da küçük */
+    }
+
+    .navbar {
+        padding: 0.6rem 0;
+    }
+
+    .nav-menu {
+        top: 50px;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .hamburger span {
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+    }
+
+    .hero {
+        padding-top: 50px;
+        min-height: calc(100vh - 50px);
+    }
+
+    .hero-container {
+        padding: 1.5rem 15px;
+        gap: 1.5rem;
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.6rem; /* Çok küçük ekranlarda daha da küçük */
+        margin-bottom: 0.8rem;
+        line-height: 1.3;
     }
 
     .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .btn {
+        padding: 12px 24px; /* Touch-friendly button boyutu */
+        font-size: 0.9rem;
+        min-height: 44px; /* Minimum touch target */
+        min-width: 120px;
+    }
+
+    .geometric-pattern {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pattern-element:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        top: 25px;
+        left: 25px;
+    }
+
+    .pattern-element:nth-child(2) {
+        width: 70px;
+        height: 70px;
+        top: 40px;
+        left: 40px;
+    }
+
+    .pattern-element:nth-child(3) {
+        width: 40px;
+        height: 40px;
+        top: 55px;
+        left: 55px;
+    }
+
+    /* Section spacing optimizasyonu */
+    .about,
+    .methodology,
+    .features,
+    .team,
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header p {
         font-size: 1rem;
+    }
+
+    /* Cards ve content optimizasyonu */
+    .method-card,
+    .team-card,
+    .stat-item {
+        padding: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .method-icon,
+    .team-avatar {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .method-icon i,
+    .team-avatar i {
+        font-size: 1.5rem;
+    }
+
+    .method-card h3,
+    .team-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .method-card p,
+    .team-card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Contact form optimizasyonu */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+        font-size: 1rem;
+        min-height: 44px; /* Touch-friendly */
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+    }
+
+    /* Footer optimizasyonu */
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer-section {
+        margin-bottom: 1.5rem;
+        padding: 10px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    /* TÜBİTAK logo mobil optimizasyonu */
+    .tubitak-logo img {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+    }
+
+    /* Typography genel optimizasyonu */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.1rem; }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+/* Very small screens - 360px and below */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
     }
 
     .btn {
         padding: 10px 20px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        min-width: 100px;
+    }
+
+    .geometric-pattern {
+        width: 120px;
+        height: 120px;
+    }
+
+    .pattern-element:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .pattern-element:nth-child(2) {
+        width: 55px;
+        height: 55px;
+        top: 32px;
+        left: 32px;
+    }
+
+    .pattern-element:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        top: 45px;
+        left: 45px;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
     }
 
     .method-card,
-    .team-card {
-        padding: 1.5rem;
+    .team-card,
+    .stat-item {
+        padding: 1rem;
     }
 }
 
@@ -850,7 +1194,7 @@ html {
 
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }

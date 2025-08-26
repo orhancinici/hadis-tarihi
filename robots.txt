@@ -1,0 +1,48 @@
+# Robots.txt for Hadis Tarihi Dijital Araştırma Projesi
+# https://hadistarihi.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hadistarihi.dev/sitemap.xml
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Allow crawling of CSS and JS files for better rendering
+User-agent: *
+Allow: /styles.css
+Allow: /script.js
+Allow: /yazi-detay.js
+Allow: /yazilar.js
+
+# Allow crawling of images
+User-agent: *
+Allow: /img/
+
+# Allow crawling of articles
+User-agent: *
+Allow: /yazilar/
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Host directive (helps with canonical URL)
+Host: https://hadistarihi.dev
