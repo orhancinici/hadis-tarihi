@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "slug": "hadis-tarihi-dijital-metodoloji",
+      "title": "Hadis Tarihi Araştırmalarında Dijital Metodolojinin Kullanımı",
+      "author": "Proje Yürütücüsü",
+      "date": "2025-06-15",
+      "excerpt": "Hadis tarihi araştırmalarında dijital teknolojilerin kullanımı ve bu alanda yeni açılımlar.",
+      "tags": ["dijital metodoloji", "hadis tarihi", "CBS", "sosyal ağ analizi"]
+    },
+    {
+      "slug": "III-IX-asir-hadis-ilmi",
+      "title": "III./IX. Asır Sonrası Hadis İlminin Gelişimi",
+      "author": "Proje Yürütücüsü",
+      "date": "2025-07-20",
+      "excerpt": "III./IX. asır sonrasında hadis ilminin gelişimi ve muhaddislerin faaliyetlerinin dijital analizi.",
+      "tags": ["III. asır", "IX. asır", "hadis ilmi", "muhaddisler", "tarihsel analiz"]
+    }
+  ]
+}

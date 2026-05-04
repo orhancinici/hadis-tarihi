@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Components — butonlar, kartlar, formlar, etiketler, hata mesajları
+   ========================================================================== */
+
+/* ---- Buttons ---- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ---- Section header ---- */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* ---- Generic card ---- */
+.card {
+    background: var(--bg-white);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ---- Tags ---- */
+.tag {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 0.2rem;
+}
+
+/* ---- Forms ---- */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-dark);
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ---- Notifications (JS oluşturur) ---- */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2196f3;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+    max-width: 320px;
+}
+
+.notification.visible {
+    transform: translateX(0);
+}
+
+.notification-success { background: #4caf50; }
+.notification-error   { background: #f44336; }
+.notification-info    { background: #2196f3; }
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.notification-close {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ---- Error / empty states ---- */
+.error-message,
+.no-articles {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: var(--bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.error-message i,
+.no-articles i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.error-message h2,
+.no-articles h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.error-message p,
+.no-articles p {
+    color: var(--text-light);
+}
+
+/* ---- Scroll progress bar ---- */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: var(--gradient-primary);
+    z-index: 10001;
+    transition: width 0.1s ease;
+}

@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Responsive — tüm @media kuralları (mobile-first sıralama)
+   ========================================================================== */
+
+/* ---- 992px ve altı (tablet) ---- */
+@media (max-width: 992px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; }
+
+    .hero-container,
+    .about-content,
+    .features-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .about-content,
+    .features-content,
+    .contact-content {
+        text-align: left;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* ---- 768px ve altı (mobil) ---- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.4rem; }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-logo img {
+        height: 38px;
+    }
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 64px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+        transition: left 0.3s ease;
+        box-shadow: var(--shadow);
+        padding: 1.5rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 0;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.05rem;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .hero {
+        padding-top: var(--navbar-height);
+        min-height: calc(100vh - var(--navbar-height));
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .geometric-pattern {
+        width: 220px;
+        height: 220px;
+    }
+
+    .pattern-element:nth-child(1) { width: 150px; height: 150px; top: 35px; left: 35px; }
+    .pattern-element:nth-child(2) { width: 110px; height: 110px; top: 55px; left: 55px; }
+    .pattern-element:nth-child(3) { width: 70px;  height: 70px;  top: 75px; left: 75px; }
+
+    .about,
+    .methodology,
+    .features,
+    .team,
+    .contact {
+        padding: 4rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-meta-info {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .article-content .article-title {
+        font-size: 1.8rem;
+    }
+
+    .article-navigation {
+        flex-direction: column;
+    }
+
+    .article-navigation .btn {
+        width: 100%;
+    }
+
+    .page-header {
+        padding: calc(var(--navbar-height) + 2rem) 0 3rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ---- 480px ve altı (küçük mobil) ---- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .nav-logo img {
+        height: 32px;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 11px 22px;
+        font-size: 0.95rem;
+        min-height: 44px;
+    }
+
+    .method-card,
+    .team-card,
+    .stat-item,
+    .article-card {
+        padding: 1.3rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+        font-size: 1rem;
+        min-height: 44px;
+    }
+
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .tubitak-logo img {
+        max-width: 260px;
+    }
+
+    .not-found h1 {
+        font-size: 4.5rem;
+    }
+}

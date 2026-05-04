@@ -3,86 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yazılar - Hadis Tarihi Dijital Araştırma Projesi</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Yazılar — Hadis Tarihi Dijital Araştırma Projesi</title>
+    <meta name="description" content="Hadis Tarihi Dijital Araştırma Projesi kapsamında yayınlanan akademik yazılar ve makaleler.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5530">
+
+    <link rel="canonical" href="https://hadistarihi.dev/yazilar.html">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yazılar — Hadis Tarihi Dijital Araştırma Projesi">
+    <meta property="og:description" content="Proje kapsamında yayınlanan akademik yazılar.">
+    <meta property="og:url" content="https://hadistarihi.dev/yazilar.html">
+    <meta property="og:image" content="https://hadistarihi.dev/assets/img/logo.png">
+    <meta property="og:locale" content="tr_TR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main">İçeriğe atla</a>
+
+    <nav class="navbar" aria-label="Ana navigasyon">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="https://hadistarihi.dev/">
-                    <img src="img/Logo_web_kck.png" alt="Hadis Tarihi Dijital Araştırma Projesi - TÜBİTAK Destekli Hadis İlmi Araştırması Logo">
+                <a href="/" aria-label="Ana sayfa">
+                    <img src="assets/img/logo.png" alt="Hadis Tarihi Dijital Araştırma Projesi logosu">
                 </a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html#home">Ana Sayfa</a></li>
                 <li><a href="index.html#about">Proje Hakkında</a></li>
-                <li><a href="#veritabani">Veritabanı</a></li>
                 <li><a href="index.html#methodology">Metodoloji</a></li>
                 <li><a href="yazilar.html" class="active">Yazılar</a></li>
                 <li><a href="index.html#team">Ekip</a></li>
                 <li><a href="index.html#contact">İletişim</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <section class="page-header">
-        <div class="container">
-            <div class="header-content">
-                <h1>Yazılar</h1>
-                <p>Projeye Dair Yazılar</p>
+    <main id="main">
+        <section class="page-header">
+            <div class="container">
+                <div class="header-content">
+                    <h1>Yazılar</h1>
+                    <p>Projeye Dair Yazılar</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Articles Section -->
-    <section class="articles-section">
-        <div class="container">
-            <div class="articles-grid" id="articlesGrid">
-                <!-- Yazılar JavaScript ile yüklenecek -->
+        <section class="articles-section">
+            <div class="container">
+                <div class="articles-grid" id="articlesGrid" aria-live="polite">
+                    <!-- JS ile yüklenir -->
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Destekleyen Kurum</h3>
-
                     <div class="tubitak-logo">
-                        <img src="img/tubitak_logo.png" alt="TÜBİTAK Logo"
-                        style="width: 360px; height: 120px;">
+                        <img src="assets/img/tubitak-logo.png" alt="TÜBİTAK Logosu">
                     </div>
-
-                    
                     <p>Türkiye Bilimsel ve Teknolojik Araştırma Kurumu</p>
                 </div>
-
                 <div class="footer-section">
                     <h3>Hadis Tarihi Projesi</h3>
                     <p>Mısır Bölgesi Hadis Araştırmaları (Fâtımîler Dönemi 358/969–567/1171): Bir Yöntem Denemesi</p>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2025 Hadis Tarihi Dijital Araştırma Projesi. Tüm hakları saklıdır.</p>
+                <p>&copy; <span data-year>2026</span> Hadis Tarihi Dijital Araştırma Projesi. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="yazilar.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/articles-list.js" defer></script>
 </body>
 </html>

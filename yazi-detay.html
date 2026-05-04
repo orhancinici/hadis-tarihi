@@ -3,97 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yazı Detayı - Hadis Tarihi Dijital Araştırma Projesi</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Yazı — Hadis Tarihi Dijital Araştırma Projesi</title>
+    <meta name="description" content="Hadis Tarihi Dijital Araştırma Projesi makalesi.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5530">
+
+    <link rel="canonical" href="https://hadistarihi.dev/yazi-detay.html">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Yazı — Hadis Tarihi Dijital Araştırma Projesi">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://hadistarihi.dev/yazi-detay.html">
+    <meta property="og:image" content="https://hadistarihi.dev/assets/img/logo.png">
+    <meta property="og:locale" content="tr_TR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main">İçeriğe atla</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <nav class="navbar" aria-label="Ana navigasyon">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="https://hadistarihi.dev/">
-                    <img src="img/Logo_web_kck.png" alt="Hadis Tarihi Dijital Araştırma Projesi - TÜBİTAK Destekli Hadis İlmi Araştırması Logo">
+                <a href="/" aria-label="Ana sayfa">
+                    <img src="assets/img/logo.png" alt="Hadis Tarihi Dijital Araştırma Projesi logosu">
                 </a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html#home">Ana Sayfa</a></li>
                 <li><a href="index.html#about">Proje Hakkında</a></li>
-                <li><a href="#veritabani">Veritabanı</a></li>
                 <li><a href="index.html#methodology">Metodoloji</a></li>
                 <li><a href="yazilar.html" class="active">Yazılar</a></li>
                 <li><a href="index.html#team">Ekip</a></li>
                 <li><a href="index.html#contact">İletişim</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Article Content -->
-    <section class="article-content">
-        <div class="container">
-            <div class="article-header">
-                <div class="breadcrumb">
-                    <a href="yazilar.html"><i class="fas fa-arrow-left"></i> Yazılar</a>
-                </div>
-                <div class="article-meta" id="articleMeta">
-                    <!-- Meta bilgiler JavaScript ile yüklenecek -->
-                </div>
-            </div>
-            <div class="article-body" id="articleBody">
-                <!-- Yazı içeriği JavaScript ile yüklenecek -->
-            </div>
-            <div class="article-footer">
-                <div class="article-tags" id="articleTags">
-                    <!-- Etiketler JavaScript ile yüklenecek -->
-                </div>
-                <div class="article-navigation">
-                    <a href="#" class="btn btn-secondary" id="prevArticle">
-                        <i class="fas fa-chevron-left"></i> Önceki Yazı
-                    </a>
-                    <a href="#" class="btn btn-secondary" id="nextArticle">
-                        Sonraki Yazı <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main id="main">
+        <article class="article-content">
+            <div class="container">
+                <header class="article-header">
+                    <div class="breadcrumb">
+                        <a href="yazilar.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Tüm Yazılar</a>
+                    </div>
+                    <div id="articleMeta"><!-- JS ile yüklenir --></div>
+                </header>
 
-    <!-- Footer -->
+                <div class="article-body" id="articleBody">
+                    <!-- JS ile yüklenir -->
+                </div>
+
+                <footer class="article-footer">
+                    <div class="article-tags" id="articleTags" hidden></div>
+                    <nav class="article-navigation" aria-label="Yazılar arası navigasyon">
+                        <a href="#" class="btn btn-secondary" id="prevArticle" hidden>
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i> Önceki Yazı
+                        </a>
+                        <a href="#" class="btn btn-secondary" id="nextArticle" hidden>
+                            Sonraki Yazı <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </footer>
+            </div>
+        </article>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Destekleyen Kurum</h3>
-
                     <div class="tubitak-logo">
-                        <img src="img/tubitak_logo.png" alt="TÜBİTAK Logo"
-                        style="width: 360px; height: 120px;">
+                        <img src="assets/img/tubitak-logo.png" alt="TÜBİTAK Logosu">
                     </div>
-
-                    
                     <p>Türkiye Bilimsel ve Teknolojik Araştırma Kurumu</p>
                 </div>
-
                 <div class="footer-section">
                     <h3>Hadis Tarihi Projesi</h3>
                     <p>Mısır Bölgesi Hadis Araştırmaları (Fâtımîler Dönemi 358/969–567/1171): Bir Yöntem Denemesi</p>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2025 Hadis Tarihi Dijital Araştırma Projesi. Tüm hakları saklıdır.</p>
+                <p>&copy; <span data-year>2026</span> Hadis Tarihi Dijital Araştırma Projesi. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="yazi-detay.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/article-detail.js" defer></script>
 </body>
 </html>
