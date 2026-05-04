@@ -7,7 +7,10 @@
       "Bash(heroku logs *)",
       "Bash(heroku apps *)",
       "Bash(heroku ps *)",
-      "PowerShell(gh api repos/orhancinici/hadis-tarihi/pages --method POST -f source='{\"branch\":\"main\",\"path\":\"/\"}' 2>&1)"
+      "PowerShell(gh api repos/orhancinici/hadis-tarihi/pages --method POST -f source='{\"branch\":\"main\",\"path\":\"/\"}' 2>&1)",
+      "Bash(git ls-tree *)",
+      "Bash(curl -sI \"https://hadistarihi.dev/yazilar/III-IX-asir-hadis-ilmi.md\")",
+      "Bash(curl -sI \"https://hadistarihi.dev/yazilar/III-IX-asir-hadis-ilmi.md\" -o /dev/null -w \"HTTP %{http_code}\\\\n\")"
     ]
   }
 }
